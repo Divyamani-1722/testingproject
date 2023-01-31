@@ -1,0 +1,134 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.Container{
+   display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;  
+   /* display: grid;
+    grid-template-columns: 200px 200px;
+    margin:100px;*/
+    
+
+
+}
+
+body{
+    background-color:aquamarine;
+}
+header{
+    width:700px;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:chartreuse;
+    line-height:100px;
+}
+header img{
+    width:70px;
+    height:50px;
+    margin-right:50px ;
+    float:left;
+}
+header h1{
+    color:blue;
+}
+nav{
+    clear:both;
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    margin-top:10px;
+    float:left;
+    margin-right:5px;
+    width:100px;
+    text-align:center;
+    height:40px;
+    background-color:blue;
+    border-radius:10px;
+
+    border :2px solid grey;
+    height:20px;
+    justify-content: center;
+    align-items: center;
+
+   transition-property: width,height,transform,radius;
+    transition-duration:2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s; 
+
+   /* transition: border-radius,background-color,transform 5s ease-in; */
+
+   position:relative;
+   animation-name:listanim;
+   animation-duration:2s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   
+}
+@keyframes listanim {
+    /*from{
+        background-color:blue;
+    }
+    to{
+        background-color:red;
+    }*/
+
+    0%{
+        background-color:blue;
+        border-radius:0px;
+    }
+    25%{
+        background-color:coral;
+        border-radius:0px;
+    }
+    50%{
+        background-color:brown;
+        border-radius:25px;
+    }
+    100%{
+        background-color:black;
+        border-radius:50px;
+    }
+}
+
+
+
+
+nav ul li a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 3px;
+    color:azure;
+    display:black;
+}
+nav ul li:hover{
+
+width:200px;
+height:40px;
+/*transform: rotate(360deg);*/
+border-radius: 50%;
+}
+
+nav ul li a:hover{
+color:darkcyan;
+}
+main{
+    clear:both;
+}
+main h1{
+    color:coral;
+}
+footer{
+    height:50px;
+    background-color:black;
+    color:whitesmoke;
+    line-height: 50px;
+}
+
